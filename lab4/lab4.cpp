@@ -24,5 +24,7 @@ void Counter::resulter(){
     cout <<"distance "<< distance<<endl;
     cout <<"counter_name "<< counter_name<<endl;
     cout <<"status of working "<< is_working<<endl;
-    cout <<"id "<< id;
+    cout <<"id "<< id<<endl;
+    cout <<"number of uses "<< number_Of_use<<endl;
+    cout <<"adress "<< adress<<endl;
 };

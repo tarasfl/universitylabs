@@ -18,9 +18,11 @@ public:
     string adress;
     Counter(){
         distance = 0.0;
-        counter_name = "N/A";
+        counter_name = "n/a";
         is_working = false;
         id = 0;
+        number_Of_use = 0;
+        adress = "n/a";
     };   
     ~Counter();
     Counter(double dist, string name, bool is_w, int ident){
@@ -28,6 +30,8 @@ public:
         counter_name = name;
         is_working = is_w;
         id = ident;
+        number_Of_use = 0;
+        adress = "n/a";
 };
 
     
