@@ -3,10 +3,6 @@
 using namespace std;
 
 
-int main(){
-    return 0;
-};
-
 Counter::~Counter()
 = default;;
 
@@ -24,9 +20,9 @@ string Counter::getCounter_name(){
 };
 
 void Counter::resulter(){
-    cout <<"max_volume"<< max_volume;
-    cout <<"distance"<< distance;
-    cout <<"counter_name"<< counter_name;
-    cout <<"status of working"<< is_working;
-    cout <<"id"<< id;
+    cout <<"max_volume "<< max_volume<<endl;
+    cout <<"distance "<< distance<<endl;
+    cout <<"counter_name "<< counter_name<<endl;
+    cout <<"status of working "<< is_working<<endl;
+    cout <<"id "<< id;
 };

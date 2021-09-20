@@ -1,5 +1,4 @@
 #include "lab4.cpp"
-#include "lab4.h"
 #include <string>
 #include <iostream>
 using namespace std;
