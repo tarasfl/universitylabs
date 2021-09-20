@@ -4,16 +4,24 @@
 class Park
 {
 private:
-    float max_volume;
+    const float max_volume = 2.5;
     double distance;
-    char *name;
+    char *counter_name;
 protected:
-    bool is_open;
+    bool is_working;
     int id;
 
 public:
     float number_Of_use;
     char *adress;
-    Park();
+    Park(double dist, char *name, bool is_w, int id){
+        distance = dist;
+        counter_name = name;
+        is_working = is_w;
+        id = id;
+    };
     ~Park();
+    float getMax_volume();
+    double getDistance();
+    char getCounter_name();
 };
