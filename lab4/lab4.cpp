@@ -1,21 +1,10 @@
-#include <lab4.h>
+#include "lab4.h"
 #include <string>
 using namespace std;
 
 
 int main(){
     return 0;
-};
-
-
-Counter::Counter()
-{
-    distance = 0.0;
-    counter_name = "N/A";
-    is_working = false;
-    id = 0;
-    number_Of_use = 0;
-    adress = 'n/a';
 };
 
 Counter::~Counter()
