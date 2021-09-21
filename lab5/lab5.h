@@ -38,6 +38,4 @@ public:
 private:
     Dinner();
     ~Dinner();
-
-
 };
