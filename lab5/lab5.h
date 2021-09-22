@@ -2,6 +2,16 @@
 #include <string>
 using namespace std;
 
+
+enum type{
+    BAR, 
+    BUTTON, 
+    POPCORN, 
+    GUM,
+    CHOCOLATE
+};
+
+
 class Candy
 {
 public:
@@ -21,13 +31,7 @@ private:
     string ate();
 };
 
-enum type{
-    BAR, 
-    BUTTON, 
-    POPCORN, 
-    GUM,
-    CHOCOLATE
-};
+
 
 class Dinner
 {
