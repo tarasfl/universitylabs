@@ -4,7 +4,7 @@ using namespace std;
 
 
 Counter::~Counter()
-= default;;
+= default;
 
 
 float Counter::getMax_volume(){

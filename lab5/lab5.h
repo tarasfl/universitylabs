@@ -14,13 +14,13 @@ enum type{
 
 class Candy
 {
+    private:
+    int k;
 public:
-    string name;
+string name;
     int mass_in_grams;
     int amount;
     float price;
-
-private:
     Candy(){
         name="n/a";
         mass_in_grams=0;
@@ -28,18 +28,35 @@ private:
         price=0.0;
     };
     ~Candy();
-    string ate();
+    Candy(string n, int m , int a, float p){
+        name = n;
+        mass_in_grams = m;
+        amount = a;
+        price = p;
+    };
+    void ate();
+    float getPrice();
 };
 
 
 
 class Dinner
 {
-public:
+private:
     int day;
     float time;
 
-private:
+public:
     Dinner();
     ~Dinner();
+    Dinner(int d, float t){
+        day =d;
+        time = t;
+    };
+    int l=0;
+    int cl[4] ={0, 0, 0, 0};
+    Candy *candies[4];
+    Candy *listOfCandies[4];
+    void addCandy(Candy *candy);
+    void findTheMostExpensiveCandies();
 };
