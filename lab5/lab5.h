@@ -15,22 +15,21 @@ enum type{
 class Candy
 {
     private:
-    int k;
-public:
-string name;
-    int mass_in_grams;
+    int massInGrams;
     int amount;
+public:
+    string name;
     float price;
     Candy(){
         name="n/a";
-        mass_in_grams=0;
+        massInGrams=0;
         amount=0;
         price=0.0;
     };
     ~Candy();
     Candy(string n, int m , int a, float p){
         name = n;
-        mass_in_grams = m;
+        massInGrams = m;
         amount = a;
         price = p;
     };

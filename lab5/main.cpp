@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     Dinner d_1(8, 19.00);
-    Candy c_1("c_1", 80, 7, 89.0);
+    Candy c_1("c_1", 80, 10, 89.0);
     d_1.addCandy(&c_1);
     Candy c_2("c_2", 89, 6, 99.0);
     d_1.addCandy(&c_2);
