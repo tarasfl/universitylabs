@@ -11,7 +11,7 @@ int main(){
     d_1.addCandy(&c_2);
     Candy c_3("c_3", 50, 10, 41.0, POPCORN);
     d_1.addCandy(&c_3);
-    Candy c_4("c_4", 60, 11, 9.0, CHOCOLATE);
+    Candy c_4("c_4", 60, 11, 59.0, CHOCOLATE);
     d_1.addCandy(&c_4);
     d_1.findTheMostExpensiveCandies();
     return 0;
