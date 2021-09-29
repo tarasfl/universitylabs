@@ -9,9 +9,27 @@ void Candy::ate(){
         cout<<"What delicious candies!"<<endl;
     };
 };
+Candy::Candy(string n, int m , int a, float p){
+        name = n;
+        massInGrams = m;
+        amount = a;
+        price = p;
+    };
+
+Candy::Candy(){
+        name="n/a";
+        massInGrams=0;
+        amount=0;
+        price=0.0;
+    };
 
 Candy::~Candy()
 = default;
+
+Dinner::Dinner(int d, float t){
+        day =d;
+        time = t;
+};
 
 Dinner::~Dinner()
 = default;

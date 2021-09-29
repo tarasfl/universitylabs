@@ -20,19 +20,9 @@ class Candy
 public:
     string name;
     float price;
-    Candy(){
-        name="n/a";
-        massInGrams=0;
-        amount=0;
-        price=0.0;
-    };
+    Candy();
     ~Candy();
-    Candy(string n, int m , int a, float p){
-        name = n;
-        massInGrams = m;
-        amount = a;
-        price = p;
-    };
+    Candy(string n, int m , int a, float p);
     void ate();
     float getPrice();
 };
@@ -48,12 +38,8 @@ private:
 public:
     Dinner();
     ~Dinner();
-    Dinner(int d, float t){
-        day =d;
-        time = t;
-    };
+    Dinner(int d, float t);
     int l=0;
-    int cl[4] ={0, 0, 0, 0};
     Candy *candies[4];
     Candy *listOfCandies[4];
     void addCandy(Candy *candy);
