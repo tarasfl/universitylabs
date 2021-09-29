@@ -17,12 +17,13 @@ class Candy
     private:
     int massInGrams;
     int amount;
+    type candyType;
 public:
     string name;
     float price;
     Candy();
     ~Candy();
-    Candy(string n, int m , int a, float p);
+    Candy(string n, int m , int a, float p, type cT);
     void ate();
     float getPrice();
 };

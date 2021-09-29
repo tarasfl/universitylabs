@@ -9,11 +9,12 @@ void Candy::ate(){
         cout<<"What delicious candies!"<<endl;
     };
 };
-Candy::Candy(string n, int m , int a, float p){
+Candy::Candy(string n, int m , int a, float p, type cT){
         name = n;
         massInGrams = m;
         amount = a;
         price = p;
+        candyType = cT;
     };
 
 Candy::Candy(){
