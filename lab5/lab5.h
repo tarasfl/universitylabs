@@ -25,7 +25,6 @@ public:
     ~Candy();
     Candy(string n, int m , int a, float p, type cT);
     void ate();
-    float getPrice();
 };
 
 
