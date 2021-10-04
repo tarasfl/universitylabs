@@ -34,14 +34,15 @@ class Dinner
 private:
     int day;
     float time;
+    Candy *candies[4];
+    Candy *listOfCandies[4];
 
 public:
     Dinner();
     ~Dinner();
     Dinner(int d, float t);
     int l=0;
-    Candy *candies[4];
-    Candy *listOfCandies[4];
+    
     void addCandy(Candy *candy);
     void findTheMostExpensiveCandies();
 };
