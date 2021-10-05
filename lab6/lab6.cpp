@@ -55,6 +55,6 @@ std::istream &operator >>( std::istream  &input,  Cube obj ) {
 }
 Cube operator*= (Cube obj, float num){
     std::cout << obj.a*num<< std::endl;
-    obj.a = obj.a*num;  
+    obj.a *= num;  
     return obj;
 };
