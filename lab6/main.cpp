@@ -1,13 +1,16 @@
 #include "lab6.cpp"
 #include <string>
-using namespace std;
+
 
 int main() {
-    Cube c1(6.0), c2(5.0), c3;
+    Cube c1(6.0, 1), c2(5.0, 1);
+    c2 == c1;
+    c2 > c1;
     c2 < c1;
-    cout << "First cube : " << c1 << endl;
+    std::cout << "First cube : " << c1 << std::endl;
     c1 *= 9;
-    cout << "Second cube : " << c1 << endl;
+    std::cout << "Second cube : " << c1 << std::endl;
+    c1.volume();
     c1.square();
     return 0;
 }

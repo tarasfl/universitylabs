@@ -2,22 +2,35 @@
 #include <string>
 
 
-Cube::Cube(float iA){
+Cube::Cube(float iA, bool cub){
     a = iA;
+    isCube =cub;
 }
 
 Cube::Cube() {
+    isCube=false;
     a=0;
 }
 
 int Cube::volume() {
+    if(isCube){
     std::cout<< a*a*a<<std::endl;
     return (a*a*a);
+    } else{
+        std::cout<<"You must have cube"<<std::endl;
+        return 0;
+    };
+
 }
 
 int Cube::square() {
+    if(isCube){
     std::cout << 6*a*a << std::endl;
     return (6*a*a);
+    }else{
+        std::cout<<"You must have cube"<<std::endl;
+        return 0;
+    }
 }
 
 bool Cube::operator < (Cube const obj) {
@@ -52,9 +65,9 @@ std::ostream &operator << ( std::ostream &output, Cube obj ) {
         return output;            
 }
 
-std::istream &operator >>( std::istream  &input,  Cube obj ) { 
-         input >> obj.a;
-         return input;            
+std::istream &operator >>( std::istream  &input,  Cube &obj ) { 
+        input >> obj.a;
+        return input;            
 }
 
 Cube &operator *= (Cube &obj, float num) {
