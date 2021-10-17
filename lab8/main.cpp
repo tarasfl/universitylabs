@@ -10,5 +10,6 @@ int main(){
 
 
     c.sum();
+    c.all();
     return 0;
 }

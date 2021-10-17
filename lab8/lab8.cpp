@@ -10,9 +10,10 @@ void Complexs::add(int real, int imag){
 void Complexs::sum(){
     if(stack.size()>=4){
         int buf[4];
-        for(int i=0; i<4; i++){
+        for(int i=0; i<4;){
              buf[i]=stack.top();
              stack.pop();
+              i++;
         }
        std::cout<<"sum real:"<<buf[0]+buf[2]<<"sum imagine"<<buf[1]+buf[3]<<std::endl;
        for(int i=3; i>0; i--){
