@@ -1,6 +1,21 @@
 #include "lab7.h"
 #include <string>
 
+Dot::Dot(){
+    isDot=0;
+};
+Segment::Segment(){
+    length=0;
+};
+Rectangle::Rectangle(){
+    width=0;
+};
+Parallelepiped::Parallelepiped(){
+    height=0;
+};
+Circle::Circle(){
+    radius=0;
+};
 void Dot::setDot(){
     isDot=1;
 }
