@@ -46,21 +46,24 @@ void Complexs::findKey(int k){
 }
 
 void Complexs::find(int real, int imag){
-    if(stack.size()){
+
         int l =stack.size()/2-1;
         int r, im;
         std::stack <int> buf;
-        for(int i =l; i<l; l--){
+        for(int i =l; i<l; i--){
             r=stack.top();
+            buf.push(stack.top());
             stack.pop();
             im=stack.top();
+            buf.push(stack.top());
             stack.pop();
+            std::cout<<r<<im<<std::endl;
             if((r==real) && (im==imag)){
                 std::cout<<"key:"<<i<<std::endl;
                 break;
             }
         }
-        if((r!=real) && (im!=imag)) std::cout<<"there is no such a num"<<std::endl;
+        //if((r!=real) && (im!=imag)) std::cout<<"there is no such a num"<<std::endl;
         l = buf.size()/2;
         for(int i=0; i<=l; i++){
             stack.push(stack.top());
@@ -68,7 +71,7 @@ void Complexs::find(int real, int imag){
             stack.push(stack.top());
             buf.pop();
         }
-    }
+    
 }
 
  void Complexs::complexsSize(){

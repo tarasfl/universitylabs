@@ -9,7 +9,6 @@ int main(){
     c.add(32, 67);
 
 
-    c.all();
-    c.all();
+    c.sum();
     return 0;
 }
