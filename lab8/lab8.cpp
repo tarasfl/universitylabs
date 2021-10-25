@@ -76,7 +76,7 @@ void ComplexStack::sumTopTwo()
 
 complex_number ComplexStack::getByIndex(int k)
 {
-    complex_number result = NULL;
+    complex_number result = (NULL, NULL);
     if (this->stack.size() > k) // k == 0  -  the top element of the stack
     {
         std::stack<complex_number> buf;
@@ -112,6 +112,7 @@ int ComplexStack::find(complex_number num)
 
     if (this->stack.size() > 0 && (this->stack.top() == num))
     {
+        index++;
         std::cout << "find(" << num << "): found in the position: " << index << std::endl;
     }
     else
