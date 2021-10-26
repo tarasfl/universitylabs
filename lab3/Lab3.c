@@ -39,3 +39,4 @@ int main()
     int *j = &h;
 	return 0;
 };
+h
